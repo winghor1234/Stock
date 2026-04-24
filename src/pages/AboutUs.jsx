@@ -1,0 +1,118 @@
+import React from "react";
+
+export default function AboutUs() {
+    return (
+        <section className="bg-[#041a13] text-white min-h-screen py-16">
+            <div className="max-w-7xl mx-auto px-6">
+
+                {/* HEADER */}
+                <div className="mb-12">
+                    <p className="text-green-400 tracking-widest mb-3">
+                        ກ່ຽວກັບ
+                    </p>
+
+                    <h1 className="text-4xl md:text-5xl font-bold">
+                        SJI Investment
+                    </h1>
+                </div>
+
+                {/* MAIN CARD */}
+                <div className=" rounded-2xl border border-green-500/10  bg-gradient-to-r from-[#06251d] to-[#02140f] p-10 grid md:grid-cols-2 gap-10 items-center">
+
+                    {/* LEFT CONTENT */}
+                    <div className="max-w-xl">
+                        <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+                            SJI Investment ແມ່ນ Fintech Startup ທີ່ໄດ້ຮັບອະນຸຍາດ
+                            ຈາກ ກ.ລ.ຕ ສປປ ລາວ ໃນການລົງທຶນ ແລະ
+                            ມີມາດຕະຖານ ISO 27001:2022 ດ້ານຄວາມປອດໄພ.
+                        </p>
+
+                        <p className="text-gray-300 mb-8 leading-relaxed text-lg">
+                            ພວກເຮົາມຸ່ງເນັ້ນການລົງທຶນສະຫຼາດ ໃຫ້ເຂົ້າຖຶງຕະຫຼາດໂລກ
+                            ຜ່ານແພລດຟອມທີ່ໃຊ້ງ່າຍ ແລະ ປອດໄພ.
+                        </p>
+
+                        {/* <button className="bg-green-500 text-black px-6 py-3 rounded-xl font-medium  hover:bg-green-400 transition shadow-[0_0_25px_rgba(0,255,150,0.25)]">
+                            ດາວໂຫຼດ App ຟຣີ →
+                        </button> */}
+                    </div>
+
+                    {/* RIGHT STATS */}
+                    <div className="flex items-center justify-center ">
+
+                        <img
+                            src="/public/7.png"
+                            alt="logo"
+                            className="object-cover rounded-lg"
+                        />
+
+                    </div>
+
+                </div>
+                {/* ===== TEAM ===== */}
+                <div className="mt-12">
+
+                    {/* title */}
+                    <p className="text-green-400 tracking-widest mb-6">
+                        ທີມງານ
+                    </p>
+
+                    {/* grid */}
+                    <div className="grid md:grid-cols-3 gap-8">
+
+                        {[
+                            {
+                                name: "ທ່ານ ມະນີລຸດ",
+                                role: "CEO & Co-Founder",
+                                short: "KV",
+                                description: "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມເຊື່ອຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງກຸລະຍຸດການລົງທຶນ"
+                            },
+                            {
+                                name: "ທ່ານ ຊາຍວຸດ",
+                                role: "CTO",
+                                short: "PB",
+                                description: "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ເຊື່ອຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
+                            },
+                            {
+                                name: "ທ່ານ ສຸວັນພອນ",
+                                role: "CFO",
+                                short: "NS",
+                                description: "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ເຊື່ອຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
+                            }
+                        ].map((member, i) => (
+                            <div
+                                key={i}
+                                className="p-8 rounded-2xl border border-green-500/10   bg-gradient-to-b from-[#06251d] to-[#02140f] text-center hover:border-green-400/30 hover:scale-[1.02] transition"
+                            >
+
+                                {/* avatar circle */}
+                                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full border border-green-400/40 text-green-400 text-lg font-bold">
+                                    {member.short}
+                                </div>
+
+                                {/* name */}
+                                <h3 className="font-semibold mb-1">
+                                    {member.name}
+                                </h3>
+
+                                {/* role */}
+                                <p className="text-gray-400 text-sm">
+                                    {member.role}
+                                </p>
+
+                                {/* 🔥 description */}
+                                <p className="text-gray-400 text-xs leading-relaxed">
+                                    {member.description}
+                                </p>
+
+                            </div>
+                        ))}
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    );
+}
