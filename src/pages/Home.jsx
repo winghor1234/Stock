@@ -116,7 +116,7 @@ export default function Home() {
 
                         <div className="p-8 rounded-2xl border border-green-500/10   bg-gradient-to-br from-[#06251d] to-[#02140f]    hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
-                            <div className=" w-14 h-14 flex items-center justify-center rounded-xl  mb-6">
+                            <div className=" w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
                                 <img src="../../public/chart.png" alt="chart" />
 
                             </div>
@@ -136,7 +136,7 @@ export default function Home() {
 
                         <div className="p-8 rounded-2xl border border-green-500/10  bg-gradient-to-br from-[#06251d] to-[#02140f]  hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
-                            <div className="w-14 h-14 flex items-center justify-center rounded-xl  mb-6">
+                            <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
                                 <img src="../../public/barChart.png" alt="bar chart" />
                             </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
                         </div>
                         <div className="p-8 rounded-2xl border border-green-500/10    bg-gradient-to-br from-[#06251d] to-[#02140f]    hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
-                            <div className="w-14 h-14 flex items-center justify-center rounded-xl mb-6">
+                            <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
                                 <img src="../../public/wealth.png" alt="wealth" />
                             </div>
 
@@ -172,7 +172,7 @@ export default function Home() {
 
                         <div className="p-8 rounded-2xl border border-green-500/10  bg-gradient-to-br from-[#06251d] to-[#02140f]  hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
-                            <div className="w-14 h-14 flex items-center justify-center rounded-xl  mb-6">
+                            <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10  mb-6">
                                 <img src="../../public/invest.png" alt="invest"  />
                             </div>
 

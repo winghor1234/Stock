@@ -8,39 +8,49 @@ export default function SJIUpdates() {
     const updates = [
         {
             type: "feature",
-            title: "SJI ເພີ່ມ AI ວິເຄາະຮຸ້ນແບບ real-time",
-            desc: "ຊ່ວຍຄາດຄະເນແນວໂນ້ມຕະຫຼາດແບບອັດຕະໂນມັດ",
-            time: "2 ຊົ່ວໂມງກ່ອນ",
+            title: "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
+            desc: "Companies can build AI factories with NVIDIA Vera Rubin-powered A5X instances scaling up to nearly 1 million Rubin GPUs, Gemini on Google Distributed Cloud, confidential NVIDIA Blackwell GPUs and agentic AI built on Gemini Enterprise Agent Platform with NVIDIA Nemotron and NeMo.",
+            time: "3 ມື້ກ່ອນ",
             tag: "NEW",
         },
         {
             type: "activity",
-            title: "ມີການຊື້ TSLA ສູງຂຶ້ນ +18%",
-            desc: "ຜູ້ໃຊ້ SJI ກຳລັງເຂົ້າຊື້ຮຸ້ນ Tesla ຫຼາຍຂຶ້ນ",
-            time: "10 ນາທີກ່ອນ",
+            title: "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
+            desc: "Creative AI agents, secured by the NVIDIA OpenShell runtime, generate on-brand content, transforming how brands create, personalize and activate content.AI agents are transforming how work gets done across all industries, accelerating everything from content creation to decision-making NVIDIA’s expanded strategic collaborations with Adobe and WPP are bringing agentic AI to the center of enterprise marketing operations across creative production and customer experience orchestration",
+            time: "2 ມື້ກ່ອນ",
             tag: "HOT",
         },
         {
             type: "insight",
-            title: "AI ແນະນຳ: NVDA ມີແນວໂນ້ມຂຶ້ນ",
-            desc: "ຄະແນນ Bullish 87% ຈາກລະບົບ AI",
-            time: "1 ຊົ່ວໂມງກ່ອນ",
+            title: "OpenAI Deploys GPT-5.5 Codex on NVIDIA Blackwell Systems",
+            desc: `OpenAI has deployed its latest GPT-5.5 model to power Codex on NVIDIA Blackwell infrastructure, enabling a major leap in AI performance.The system delivers up to 50x efficiency improvements and 35x cost reduction, making large-scale AI applications more accessible for enterprises. Thousands of NVIDIA employees are already using the system internally to accelerate workflows, innovation, and problem-solving.This marks a significant step toward scalable, real-world AI deployment across industries.`,
+            time: "1 ມື້ກ່ອນ",
             tag: "AI",
-        },
-        {
-            type: "alert",
-            title: "ແຈ້ງເຕືອນ: ຄວາມຜັນຜວນ TSLA ສູງ",
-            desc: "ລາຄາປ່ຽນແປງໄວ ຄວນລະວັງ",
-            time: "5 ນາທີກ່ອນ",
-            tag: "RISK",
-        },
+        }
     ];
 
     const iconMap = {
-        feature: <Rocket className="w-full h-full text-green-400" />,
-        activity: <BarChart3 className="w-full h-full text-blue-400" />,
-        insight: <Brain className="w-full h-full text-purple-400" />,
-        alert: <AlertTriangle className="w-full h-full text-red-400" />,
+        feature: (
+            <img
+                src="../../public/invidia.jpg"
+                alt="feature"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        ),
+        activity: (
+            <img
+                src="../../public/wpp-nvidia.jpg"
+                alt="activity"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        ),
+        insight: (
+            <img
+                src="../../public/ai.webp"
+                alt="insight"
+                className="w-full h-full object-cover rounded-xl"
+            />
+        ),
     };
 
     return (
@@ -101,7 +111,7 @@ export default function SJIUpdates() {
                                 </h3>
 
                                 {/* DESC */}
-                                <p className="text-gray-400 mb-4 leading-relaxed">
+                                <p className="text-gray-400 mb-4 leading-relaxed line-clamp-2">
                                     {item.desc}
                                 </p>
 

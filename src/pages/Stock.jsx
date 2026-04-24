@@ -188,7 +188,7 @@ export default function Stock() {
                                     <MiniChart positive={s.positive} points={generatePoints()} />
                                 </div>
                                 <button className="ml-4 px-3 py-1 border border-green-400/30 rounded-lg text-green-400 hover:bg-green-500 hover:text-black transition">
-                                     ຊື້
+                                     ເບິ່ງ
                                 </button>
                             </div>
                         </div>
