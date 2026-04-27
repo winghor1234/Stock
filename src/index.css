@@ -7,6 +7,25 @@ html {
 }
 
 /* index.css */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Noto Sans Lao";
+  src: url("/fonts/NotoSansLao-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 body {
-  font-family: "Satoshi", "Noto Sans Lao", "Inter", system-ui, sans-serif;
+  font-family: "Inter", "Noto Sans Lao", system-ui, sans-serif;
 }
