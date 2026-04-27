@@ -1,5 +1,10 @@
 import { ChartNoAxesCombined } from "lucide-react";
 import React from "react";
+import ooo from "../../public/ooo.png";
+import chart from "../../public/chart.png";
+import barChart from "../../public/barChart.png";
+import wealth from "../../public/wealth.png";
+import invest from "../../public/invest.png";
 
 export default function Home() {
     return (
@@ -71,7 +76,7 @@ export default function Home() {
 
                         {/* PHONE */}
                         <img
-                            src="/public/ooo.png"
+                            src={ooo} 
                             alt="phone"
                             className=" relative w-[380px] drop-shadow-[0_20px_60px_rgba(0,0,0,0.6)] animate-float z-10 rounded-xl "
                         />
@@ -117,7 +122,7 @@ export default function Home() {
                         <div className="p-8 rounded-2xl border border-green-500/10   bg-gradient-to-br from-[#06251d] to-[#02140f]    hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
                             <div className=" w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
-                                <img src="../../public/chart.png" alt="chart" />
+                                <img src={chart} alt="chart" />
 
                             </div>
 
@@ -137,7 +142,7 @@ export default function Home() {
                         <div className="p-8 rounded-2xl border border-green-500/10  bg-gradient-to-br from-[#06251d] to-[#02140f]  hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
                             <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
-                                <img src="../../public/barChart.png" alt="bar chart" />
+                                <img src={barChart} alt="bar chart" />
                             </div>
 
                             <h3 className="text-xl font-semibold mb-3">
@@ -155,7 +160,7 @@ export default function Home() {
                         <div className="p-8 rounded-2xl border border-green-500/10    bg-gradient-to-br from-[#06251d] to-[#02140f]    hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
                             <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10 mb-6">
-                                <img src="../../public/wealth.png" alt="wealth" />
+                                <img src={wealth} alt="wealth" />
                             </div>
 
                             <h3 className="text-xl font-semibold mb-3">
@@ -173,7 +178,7 @@ export default function Home() {
                         <div className="p-8 rounded-2xl border border-green-500/10  bg-gradient-to-br from-[#06251d] to-[#02140f]  hover:border-green-400/30 hover:shadow-[0_0_40px_rgba(0,255,150,0.08)] transition">
 
                             <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-green-500/10  mb-6">
-                                <img src="../../public/invest.png" alt="invest"  />
+                                <img src={invest} alt="invest"  />
                             </div>
 
                             <h3 className="text-xl font-semibold mb-3">
