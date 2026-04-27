@@ -2,6 +2,9 @@
 
 import React from "react";
 import { Rocket, BarChart3, Brain, AlertTriangle } from "lucide-react";
+import invidia from "../../public/invidia.jpg";
+import wppnvidia from "../../public/wpp-nvidia.jpg";
+import ai from "../../public/ai.webp";
 
 export default function SJIUpdates() {
 
@@ -32,21 +35,21 @@ export default function SJIUpdates() {
     const iconMap = {
         feature: (
             <img
-                src="../../public/invidia.jpg"
+                src={invidia}
                 alt="feature"
                 className="w-full h-full object-cover rounded-xl"
             />
         ),
         activity: (
             <img
-                src="../../public/wpp-nvidia.jpg"
+                src={wppnvidia}
                 alt="activity"
                 className="w-full h-full object-cover rounded-xl"
             />
         ),
         insight: (
             <img
-                src="../../public/ai.webp"
+                src={ai}
                 alt="insight"
                 className="w-full h-full object-cover rounded-xl"
             />

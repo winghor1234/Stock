@@ -5,3 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* index.css */
+body {
+  font-family: "Satoshi", "Noto Sans Lao", "Inter", system-ui, sans-serif;
+}

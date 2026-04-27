@@ -1,4 +1,5 @@
 import React from "react";
+import aaa from "../../public/7.png";
 
 export default function AboutUs() {
     return (
@@ -41,7 +42,7 @@ export default function AboutUs() {
                     <div className="flex items-center justify-center ">
 
                         <img
-                            src="/public/7.png"
+                            src={aaa}
                             alt="logo"
                             className="object-cover rounded-lg"
                         />
