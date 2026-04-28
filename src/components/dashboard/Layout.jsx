@@ -7,7 +7,7 @@ export default function DashboardLayout({ children }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="h-screen flex flex-col text-white">
+        <div className="border-2 border-red-500  h-screen flex flex-col text-white bg-[#041b14]">
 
             {/* TOPBAR */}
             <div className="h-[64px] shrink-0">
@@ -15,13 +15,13 @@ export default function DashboardLayout({ children }) {
             </div>
 
             {/* BODY */}
-            <div className="flex flex-1 overflow-hidden bg-gray-100">
+            <div className="flex flex-1 overflow-hidden bg-[#041b14]">
 
                 {/* SIDEBAR */}
                 <div className={`
                     fixed md:static top-[64px] left-0 z-50
                     h-[calc(100vh-64px)] md:h-full
-                    w-[260px] bg-white border-2
+                    w-[260px] bg-[#041b14] border-2 border-green-900/30
                     transform transition-transform duration-300
                     ${isOpen ? "translate-x-0" : "-translate-x-full"}
                     md:translate-x-0
