@@ -13,7 +13,7 @@ const data = [
 
 export default function TickerBar() {
     return (
-        <div className="bg-[#071a14] overflow-hidden border-y border-white/10">
+        <div className="bg-[#031826] overflow-hidden border-y border-white/10">
             <div className="flex whitespace-nowrap animate-marquee">
                 {[...data, ...data].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 px-6 py-2 text-sm">

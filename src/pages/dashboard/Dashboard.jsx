@@ -7,17 +7,17 @@ import Trading from "./Service";
 import Analytics from "./Analytics";
 import Settings from "./Settings";
 import User from "./User";
-import Service from "./Service";
+import Marketting from "./Marketting";
+import OrderLive from "./OrderLive";
 
 export default function DashboardPage() {
     return (
         <DashboardLayout>
             <Routes>
                 <Route index element={<Overview />} />
-                <Route path="user" element={<User/>} />
-                <Route path="service" element={<Service/>} />
-                <Route path="analytics" element={<Analytics />} />
-                <Route path="settings" element={<Settings />} />
+                <Route path="marketting" element={<Marketting/>} />
+                <Route path="orders" element={<OrderLive/>} />
+                {/* <Route path="dashboard/user" element={<User/>} /> */}
             </Routes>
         </DashboardLayout>
     );

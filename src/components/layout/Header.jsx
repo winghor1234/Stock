@@ -7,9 +7,9 @@ export default function Header() {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full">
+        <header className="sticky top-0 z-50 w-full ">
             {/* Main Navbar */}
-            <div className="bg-[#070f0c] text-white px-6 md:px-12 py-4 flex items-center justify-between shadow-md">
+            <div className="bg-[#020e17]  text-white px-6 md:px-12 py-4 flex items-center justify-between shadow-md">
 
                 {/* Left */}
                 <div className="flex items-center gap-3">

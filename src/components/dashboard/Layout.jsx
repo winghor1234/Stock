@@ -1,47 +1,31 @@
-"use client"
-import { useState } from "react"
-import Topbar from "./Topbar";
+
+
 import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
 
 export default function DashboardLayout({ children }) {
-    const [isOpen, setIsOpen] = useState(false)
-
     return (
-        <div className="border-2 border-red-500  h-screen flex flex-col text-white bg-[#041b14]">
+        <div className="flex h-screen bg-[#020e17] text-white overflow-hidden">
 
-            {/* TOPBAR */}
-            <div className="h-[64px] shrink-0">
-                <Topbar onToggle={() => setIsOpen(!isOpen)} />
-            </div>
+            {/* SIDEBAR */}
+            <Sidebar />
 
-            {/* BODY */}
-            <div className="flex flex-1 overflow-hidden bg-[#041b14]">
+            {/* MAIN */}
+            <div className="flex-1 flex flex-col min-w-0">
 
-                {/* SIDEBAR */}
-                <div className={`
-                    fixed md:static top-[64px] left-0 z-50
-                    h-[calc(100vh-64px)] md:h-full
-                    w-[260px] bg-[#041b14] border-2 border-green-900/30
-                    transform transition-transform duration-300
-                    ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                    md:translate-x-0
-                `}>
-                    <Sidebar />
+                {/* TOPBAR */}
+                <div className="shrink-0">
+                    <Topbar />
                 </div>
-
-                {/* OVERLAY (mobile only) */}
-                {isOpen && (
-                    <div
-                        className="fixed inset-0 bg-black/40 md:hidden"
-                        onClick={() => setIsOpen(false)}
-                    />
-                )}
 
                 {/* CONTENT */}
                 <div className="flex-1 overflow-y-auto">
-                    <div className="p-4 min-h-full">
+
+                    {/* 🔥 IMPORTANT: CENTER + WIDTH CONTROL */}
+                    <div className="max-w-[1400px] mx-auto w-full px-4 py-4">
                         {children}
                     </div>
+
                 </div>
 
             </div>

@@ -29,3 +29,37 @@ html {
 body {
   font-family: "Inter", "Noto Sans Lao", system-ui, sans-serif;
 }
+
+/* ===== FIX SCROLLBAR CLEAN ===== */
+/* ===== FORCE FIX SIMPLEBAR ===== */
+
+/* ลบพื้นหลัง track (เส้นดำ) */
+.simplebar-track.simplebar-vertical {
+  background: transparent !important;
+  width: 6px !important;
+  right: 2px;
+}
+
+/* ซ่อน scrollbar ก่อน */
+.simplebar-scrollbar::before {
+  background: linear-gradient(
+    180deg,
+    #00ff9c,
+    rgba(0, 255, 156, 0.2)
+  ) !important;
+
+  border-radius: 999px !important;
+  opacity: 0 !important;
+}
+
+/* แสดงตอน hover หรือ scroll */
+.simplebar-track:hover .simplebar-scrollbar::before,
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 0.9 !important;
+}
+
+/* hover glow */
+.simplebar-scrollbar:hover::before {
+  box-shadow: 0 0 8px rgba(0, 255, 156, 0.7);
+}
+/* ===== SIMPLEBAR ULTRA PRO ===== */
