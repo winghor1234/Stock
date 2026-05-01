@@ -3,20 +3,7 @@
 import { useState } from "react";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
-import {
-    LayoutDashboard,
-    BarChart3,
-    Wallet,
-    User2,
-    Settings,
-    Flag,
-    NotebookText,
-    Activity,
-    FileText,
-    Shield,
-    ChevronRight,
-    Settings2,
-} from "lucide-react";
+import { LayoutDashboard, BarChart3, Wallet, User2, Settings, Flag, NotebookText, Activity, FileText, Shield, ChevronRight, Settings2, } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../../public/logo.jpeg";
 
@@ -34,26 +21,26 @@ const sections = [
     {
         title: "ຈັດການ",
         items: [
-            { name: "ລູກກຄ້າ", path: "/customers", icon: User2 },
-            { name: "ປະຫວັດທຸລະກຳ", path: "/transactions", icon: NotebookText },
-            { name: "Portfolio", path: "/portfolio", icon: Wallet },
-            { name: "ຄ່າ Commission", path: "/commission", icon: Wallet },
+            { name: "ລູກກຄ້າ", path: "/dashboard/customers", icon: User2 },
+            { name: "ປະຫວັດທຸລະກຳ", path: "/dashboard/transactions", icon: NotebookText },
+            { name: "Portfolio", path: "/dashboard/portfolio", icon: Wallet },
+            { name: "ຄ່າ Commission", path: "/dashboard/commission", icon: Wallet },
         ],
     },
     {
         title: "ລາຍງານ",
         items: [
-            { name: "Logs", path: "/logs", icon: FileText },
-            { name: "ກວດສອບ KYC", path: "/kyc", icon: Shield, badge: 3, color: "red" },
-            { name: "ການເເຈ້ງເຕືອນ", path: "/alerts", icon: Flag, badge: 4, color: "yellow" },
-            { name: "Audit Log", path: "/audit", icon: FileText },
+            { name: "ລາຍງານ", path: "/dashboard/report", icon: FileText },
+            { name: "ກວດສອບ KYC", path: "/dashboard/verify-kyc", icon: Shield, badge: 3, color: "red" },
+            { name: "ການເເຈ້ງເຕືອນ", path: "/dashboard/notifications", icon: Flag, badge: 4, color: "yellow" },
+            { name: "Audit Log", path: "/dashboard/audit", icon: FileText },
         ],
     },
     {
         title: "ລະບົບ",
         items: [
-            { name: "System Health", path: "/system", icon: Settings },
-            { name: "ຕັ້ງຄ່າ", path: "/settings", icon: Settings2 },
+            { name: "System Health", path: "/dashboard/system-health", icon: Settings },
+            { name: "ຕັ້ງຄ່າ", path: "/dashboard/settings", icon: Settings2 },
         ],
     },
 ];
@@ -67,13 +54,8 @@ export default function Sidebar() {
 
     return (
         <div
-            className={`
-        h-screen bg-[#031826] border-r border-white/5 flex flex-col
-        transition-[width] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
-        ${collapsed ? "w-[80px]" : "w-[260px]"}
-      `}
+            className={` h-screen bg-[#031826] border-r border-white/5 flex flex-col  transition-[width] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${collapsed ? "w-[80px]" : "w-[240px]"} `}
         >
-
             {/* ===== TOP ===== */}
             <div className="shrink-0">
 
@@ -87,7 +69,7 @@ export default function Sidebar() {
 
                         {!collapsed && (
                             <span className="text-white font-semibold text-sm">
-                                SJIINVESTMENT
+                                SJI INVESTMENT
                             </span>
                         )}
                     </div>
@@ -109,10 +91,10 @@ export default function Sidebar() {
                     <div className="px-5 py-4">
                         <div className="bg-green-500/10 border border-green-500/20 text-green-400 text-xs px-3 py-2 rounded-lg flex justify-between">
                             <div className="flex gap-2 items-center">
-                                <span className="w-2 h-2 bg-green-400 rounded-full" />
+                                <span className="text-[13px] bg-green-400 rounded-full" />
                                 NYSE - OPEN
                             </div>
-                            <span>07:03 ET</span>
+                            <span className="text-xs">07:03 ET</span>
                         </div>
                     </div>
                 )}
@@ -159,7 +141,7 @@ export default function Sidebar() {
                                                     <Icon size={18} />
 
                                                     {!collapsed && (
-                                                        <span className="text-sm transition-all duration-300">
+                                                        <span className="text-[13px] transition-all duration-300">
                                                             {item.name}
                                                         </span>
                                                     )}

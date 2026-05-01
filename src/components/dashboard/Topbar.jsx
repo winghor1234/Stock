@@ -15,7 +15,7 @@ export default function Topbar() {
 
                 {/* LEFT */}
                 <div className="flex flex-col justify-center">
-                    <h1 className="text-[16px] font-semibold text-white leading-tight">
+                    <h1 className="text-[14px] font-semibold text-white leading-tight">
                         Dashboard ຫຼັກ
                     </h1>
                     <p className="text-[11px] text-gray-400 mt-[1px]">
