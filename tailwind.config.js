@@ -6,15 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: [
-      //     "Satoshi",
-      //     "Noto Sans Lao",
-      //     "Inter",
-      //     "system-ui",
-      //     "sans-serif",
-      //   ],
-      // },
       animation: {
         marquee: "marquee 25s linear infinite",
         "spin-slow": "spin 20s linear infinite",

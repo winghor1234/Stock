@@ -18,7 +18,7 @@ export default function TickerBar() {
                 {[...data, ...data].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 px-6 py-2 text-sm">
                         <span className="text-white font-medium">{item.symbol}</span>
-                        <span className="text-gray-300">{item.price}</span>
+                        <span className="text-gray-300 text-sm">{item.price}</span>
                         <span
                             className={
                                 item.change.includes("+")
