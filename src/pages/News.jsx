@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Rocket, BarChart3, Brain, AlertTriangle } from "lucide-react";
-import invidia from "../../public/invidia.jpg";
-import wppnvidia from "../../public/wpp-nvidia.jpg";
-import ai from "../../public/ai.webp";
+import invidia from "../assets/invidia.jpg";
+import wppnvidia from "../assets/wpp-nvidia.jpg";
+import ai from "../assets/ai.webp";
 
 export default function SJIUpdates() {
 

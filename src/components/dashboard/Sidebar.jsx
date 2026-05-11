@@ -5,7 +5,6 @@ import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import { LayoutDashboard, BarChart3, Wallet, User2, Settings, Flag, NotebookText, Activity, FileText, Shield, ChevronRight, Settings2, } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Logo from "../../../public/logo.jpeg";
 
 /* ================= MENU ================= */
 
@@ -63,7 +62,8 @@ export default function Sidebar() {
                 <div className="flex items-center justify-between px-5 py-6 border-b border-white/5">
                     <div className="flex items-center gap-3">
                         <img
-                            src={Logo}
+                            src="/logo.jpeg"
+                            alt="logo"
                             className="w-10 h-10 rounded-xl object-cover"
                         />
 

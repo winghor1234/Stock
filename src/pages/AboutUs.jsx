@@ -1,5 +1,5 @@
 import React from "react";
-import aaa from "../../public/7.png";
+import aaa from "../assets/7.png"
 
 export default function AboutUs() {
     return (

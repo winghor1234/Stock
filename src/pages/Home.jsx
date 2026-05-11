@@ -1,10 +1,10 @@
 import { ChartNoAxesCombined } from "lucide-react";
 import React from "react";
-import ooo from "../../public/ooo.png";
-import chart from "../../public/chart.png";
-import barChart from "../../public/barChart.png";
-import wealth from "../../public/wealth.png";
-import invest from "../../public/invest.png";
+import ooo from "../assets/ooo.png";
+import chart from "../assets/chart.png";
+import barChart from "../assets/barChart.png";
+import wealth from "../assets/wealth.png";
+import invest from "../assets/invest.png";
 
 export default function Home() {
     return (
