@@ -64,49 +64,111 @@ export default function AboutUs() {
                         {[
                             {
                                 name: "ທ່ານ ມະນີລຸດ",
-                                role: "CEO & Co-Founder",
-                                short: "KV",
-                                description: "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມເຊື່ອຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງກຸລະຍຸດການລົງທຶນ"
+
+                                role: "Chief Executive Officer",
+
+                                image: `${import.meta.env.BASE_URL}team/ceo.png`,
+
+                                description:
+                                    "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມເຊື່ອຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງກຸລະຍຸດການລົງທຶນ"
                             },
+
                             {
                                 name: "ທ່ານ ຊາຍວຸດ",
-                                role: "CTO",
-                                short: "PB",
-                                description: "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ເຊື່ອຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
+
+                                role: "Chief Technology Officer",
+
+                                image: `${import.meta.env.BASE_URL}team/cto.jpeg`,
+
+                                description:
+                                    "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ເຊື່ອຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
                             },
+
                             {
                                 name: "ທ່ານ ສຸວັນພອນ",
-                                role: "CFO",
-                                short: "NS",
-                                description: "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ເຊື່ອຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
+
+                                role: "Chief Financial Officer",
+
+                                image: `${import.meta.env.BASE_URL}team/cfo.jpeg`,
+
+                                description:
+                                    "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ເຊື່ອຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
                             }
+
                         ].map((member, i) => (
                             <div
                                 key={i}
-                                className="p-8 rounded-2xl border border-green-500/10   bg-gradient-to-b from-[#06251d] to-[#02140f] text-center hover:border-green-400/30 hover:scale-[1.02] transition"
+                                className="
+    group
+    overflow-hidden
+    rounded-3xl
+    bg-gradient-to-b
+    from-[#143654]
+    to-[#0b1d2f]
+    border
+    border-white/10
+    hover:border-green-400/30
+    transition-all
+    duration-500
+    hover:-translate-y-1
+    shadow-xl
+    "
                             >
 
-                                {/* avatar circle */}
-                                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full border border-green-400/40 text-green-400 text-lg font-bold">
-                                    {member.short}
+                                {/* image */}
+                                <div className="w-full h-[420px] overflow-hidden">
+
+                                    <img
+                                        src={member.image}
+                                        alt={member.name}
+                                        className="
+            w-full
+            h-full
+            object-cover
+            object-top
+            group-hover:scale-105
+            transition-transform
+            duration-700
+            "
+                                    />
+
                                 </div>
 
-                                {/* name */}
-                                <h3 className="font-semibold mb-1">
-                                    {member.name}
-                                </h3>
+                                {/* content */}
+                                <div className="p-6 text-center">
 
-                                {/* role */}
-                                <p className="text-gray-400 text-sm">
-                                    {member.role}
-                                </p>
+                                    <p className="
+        text-green-400
+        text-sm
+        font-medium
+        tracking-wide
+        mb-2
+        ">
+                                        {member.role}
+                                    </p>
 
-                                {/* 🔥 description */}
-                                <p className="text-gray-400 text-xs leading-relaxed">
-                                    {member.description}
-                                </p>
+                                    <h3 className="
+        text-white
+        text-xl
+        font-bold
+        mb-4
+        ">
+                                        {member.name}
+                                    </h3>
+
+                                    <p className="
+        text-gray-300
+        text-sm
+        leading-relaxed
+        ">
+                                        {member.description}
+                                    </p>
+
+                                </div>
 
                             </div>
+
+
                         ))}
 
                     </div>
