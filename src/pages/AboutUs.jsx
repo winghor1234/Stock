@@ -70,7 +70,7 @@ export default function AboutUs() {
                                 image: `${import.meta.env.BASE_URL}team/ceo.png`,
 
                                 description:
-                                    "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມເຊື່ອຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງກຸລະຍຸດການລົງທຶນ"
+                                    "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມຊ່ຽວຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງຍຸດທະສາດການລົງທຶນ"
                             },
 
                             {
@@ -81,38 +81,24 @@ export default function AboutUs() {
                                 image: `${import.meta.env.BASE_URL}team/cto.jpeg`,
 
                                 description:
-                                    "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ເຊື່ອຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
+                                    "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ຊ່ຽວຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
                             },
 
                             {
-                                name: "ທ່ານ ສຸວັນພອນ",
+                                name: "ທ່ານ ສຸວັນນະພອນ",
 
                                 role: "Chief Financial Officer",
 
                                 image: `${import.meta.env.BASE_URL}team/cfo.jpeg`,
 
                                 description:
-                                    "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ເຊື່ອຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
+                                    "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ຊ່ຽວຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
                             }
 
                         ].map((member, i) => (
                             <div
                                 key={i}
-                                className="
-    group
-    overflow-hidden
-    rounded-3xl
-    bg-gradient-to-b
-    from-[#143654]
-    to-[#0b1d2f]
-    border
-    border-white/10
-    hover:border-green-400/30
-    transition-all
-    duration-500
-    hover:-translate-y-1
-    shadow-xl
-    "
+                                className=" group overflow-hidden rounded-3xl bg-gradient-to-b from-[#143654] to-[#0b1d2f] border border-white/10 hover:border-green-400/30 transition-all  duration-500   hover:-translate-y-1   shadow-xl "
                             >
 
                                 {/* image */}
@@ -121,15 +107,7 @@ export default function AboutUs() {
                                     <img
                                         src={member.image}
                                         alt={member.name}
-                                        className="
-            w-full
-            h-full
-            object-cover
-            object-top
-            group-hover:scale-105
-            transition-transform
-            duration-700
-            "
+                                        className="  w-full  h-full  object-cover  object-top  group-hover:scale-105  transition-transform  duration-700  "
                                     />
 
                                 </div>
@@ -137,30 +115,15 @@ export default function AboutUs() {
                                 {/* content */}
                                 <div className="p-6 text-center">
 
-                                    <p className="
-        text-green-400
-        text-sm
-        font-medium
-        tracking-wide
-        mb-2
-        ">
+                                    <p className="  text-green-400  text-sm  font-medium  tracking-wide  mb-2  ">
                                         {member.role}
                                     </p>
 
-                                    <h3 className="
-        text-white
-        text-xl
-        font-bold
-        mb-4
-        ">
+                                    <h3 className="  text-white  text-xl  font-bold  mb-4  ">
                                         {member.name}
                                     </h3>
 
-                                    <p className="
-        text-gray-300
-        text-sm
-        leading-relaxed
-        ">
+                                    <p className="  text-gray-300  text-sm  leading-relaxed  ">
                                         {member.description}
                                     </p>
 
