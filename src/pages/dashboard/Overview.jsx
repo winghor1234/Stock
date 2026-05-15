@@ -36,7 +36,7 @@ export default function Dashboard() {
                 {/* ===== TOP CARDS ===== */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
                     <Card title="ຍອດ AUM" value="$4.82B" change="+12.4%" positive spanText="vs ເດືອນກ່ອນ" icon={<DollarSign size={16} />} data={miniA} color="#00ff9c" />
-                    <Card title="ຜູ້ໃຊ້ ACTIVE" value="28,491" change="+8.7%" positive spanText="vs ອາທິດກ່ອນ" icon={<Users size={16} />} data={miniB} color="#3b82f6" />
+                    <Card title="ລູກຄ້າທັງໝົດ" value="28,491" change="+8.7%" positive spanText="vs ອາທິດກ່ອນ" icon={<Users size={16} />} data={miniB} color="#3b82f6" />
                     <Card title="ອໍເດີ ມື້ນີ້" value="1,243" change="-14" positive={false} spanText="vs ມື້ວານ" icon={<Zap size={16} />} data={miniC} color="#ef4444" />
                     <Card title="COMMISSION" value="$963K" change="+5.2%" positive spanText="vs ເດືອນກ່ອນ" icon={<Wallet size={16} />} data={miniD} color="#facc15" />
                 </div>
