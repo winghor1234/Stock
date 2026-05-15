@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MiniChart from "../components/MiniChart";
-import { generatePoints } from "../components/GeneratePoint";
+import { generatePoints } from "../utils/GeneratePoint";
 
 const stocks = [
     {

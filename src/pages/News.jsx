@@ -6,7 +6,7 @@ import invidia from "../assets/invidia.jpg";
 import wppnvidia from "../assets/wpp-nvidia.jpg";
 import ai from "../assets/ai.webp";
 
-export default function SJIUpdates() {
+export default function News() {
 
     const updates = [
         {
