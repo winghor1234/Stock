@@ -55,7 +55,7 @@ export default function AboutUs() {
                         ທີມງານ
                     </p>
 
-                    {/* grid */}
+                    {/* Grid*/}
                     <div className="grid md:grid-cols-3 gap-8">
 
                         {[
