@@ -33,9 +33,6 @@ export default function AboutUs() {
                             ຜ່ານແພລດຟອມທີ່ໃຊ້ງ່າຍ ແລະ ປອດໄພ.
                         </p>
 
-                        {/* <button className="bg-green-500 text-black px-6 py-3 rounded-xl font-medium  hover:bg-green-400 transition shadow-[0_0_25px_rgba(0,255,150,0.25)]">
-                            ດາວໂຫຼດ App ຟຣີ →
-                        </button> */}
                     </div>
 
                     {/* RIGHT STATS */}
