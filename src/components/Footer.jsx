@@ -62,8 +62,8 @@ export default function Footer() {
                         ຕິດຕໍ່
                     </h3>
                     <ul className="space-y-3 text-gray-400 text-sm">
-                        <li>+856 209 666 111 9</li>
-                        <li>info@msjiinvestment.la</li>
+                        <li>+856 2096794376</li>
+                        <li>admin@sjiinvestment.la</li>
                         <li>ນະຄອນຫຼວງວຽງຈັນ, ລາວ</li>
                         <li className="hover:text-green-400 cursor-pointer">ຮ່ວມງານ</li>
                     </ul>
