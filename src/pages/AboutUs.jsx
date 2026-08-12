@@ -56,38 +56,31 @@ export default function AboutUs() {
                     </p>
 
                     {/* Grid*/}
+                    {/* Grid*/}
                     <div className="grid md:grid-cols-3 gap-8">
 
                         {[
                             {
                                 name: "ທ່ານ ມະນີລຸດ",
-
                                 role: "Chief Executive Officer",
-
                                 image: `${import.meta.env.BASE_URL}team/ceo.png`,
-
+                                facebook: "https://www.facebook.com/share/1cMakc6Z3h/", // ← ໃສ່ລິ້ງ facebook ຂອງ CEO
                                 description:
                                     "ມີປະສົບການ 9 ປີໃນການລົງທຶນຮຸ່ນທົ່ວໂລກ ມີຄວາມຊ່ຽວຊານໃນການວິເຄາະຕະຫຼາດ ແລະ ການວາງຍຸດທະສາດການລົງທຶນ"
                             },
-
                             {
                                 name: "ທ່ານ ຊາຍວຸດ",
-
                                 role: "Chief Technology Officer",
-
                                 image: `${import.meta.env.BASE_URL}team/cto.jpeg`,
-
+                                facebook: "https://www.facebook.com/share/1JmfcM8ipj/", // ← ໃສ່ລິ້ງ facebook ຂອງ CTO
                                 description:
                                     "ມີປະສົບການ 6 ປີໃນດ້ານໄອທີ ຊ່ຽວຊານການພັດທະນາລະບົບ ແລະ ເທັກໂນໂລຊີສະໄໝໃໝ່"
                             },
-
                             {
                                 name: "ທ່ານ ສຸວັນນະພອນ",
-
                                 role: "Chief Financial Officer",
-
                                 image: `${import.meta.env.BASE_URL}team/cfo.jpeg`,
-
+                                facebook: "https://www.facebook.com/share/1GeaSS9DDs/", // ← ໃສ່ລິ້ງ facebook ຂອງ CFO
                                 description:
                                     "ມີປະສົບການການເງິນຫຼາຍກວ່າ 10 ປີ ຊ່ຽວຊານໃນການບໍລິຫານການເງິນ ແລະ ການວາງແຜນການເຕີບໂຕ"
                             }
@@ -95,40 +88,35 @@ export default function AboutUs() {
                         ].map((member, i) => (
                             <div
                                 key={i}
-                                className=" group overflow-hidden rounded-3xl bg-gradient-to-b from-[#143654] to-[#0b1d2f] border border-white/10 hover:border-green-400/30 transition-all  duration-500   hover:-translate-y-1   shadow-xl "
+                                onClick={() => window.open(member.facebook, "_blank", "noopener,noreferrer")}
+                                className="group overflow-hidden rounded-3xl bg-gradient-to-b from-[#143654] to-[#0b1d2f] border border-white/10 hover:border-green-400/30 transition-all duration-500 hover:-translate-y-1 shadow-xl cursor-pointer"
                             >
 
                                 {/* image */}
                                 <div className="w-full h-[420px] overflow-hidden">
-
                                     <img
                                         src={member.image}
                                         alt={member.name}
-                                        className="  w-full  h-full  object-cover  object-top  group-hover:scale-105  transition-transform  duration-700  "
+                                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                                     />
-
                                 </div>
 
                                 {/* content */}
                                 <div className="p-6 text-center">
-
-                                    <p className="  text-green-400  text-sm  font-medium  tracking-wide  mb-2  ">
+                                    <p className="text-green-400 text-sm font-medium tracking-wide mb-2">
                                         {member.role}
                                     </p>
 
-                                    <h3 className="  text-white  text-xl  font-bold  mb-4  ">
+                                    <h3 className="text-white text-xl font-bold mb-4">
                                         {member.name}
                                     </h3>
 
-                                    <p className="  text-gray-300  text-sm  leading-relaxed  ">
+                                    <p className="text-gray-300 text-sm leading-relaxed">
                                         {member.description}
                                     </p>
-
                                 </div>
 
                             </div>
-
-
                         ))}
 
                     </div>
